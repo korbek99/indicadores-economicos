@@ -1,0 +1,36 @@
+<mat-toolbar class="mat-primary mat-toolbar-color-primary">
+  <button mat-icon-button class="custom-button" (click)="goBack()">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <span class="toolbar-title">{{ title }}</span>
+  <div class="spacer">
+    <h1>Indicador</h1>
+  </div>
+</mat-toolbar>
+<div style="padding: 16px;">
+  <mat-list *ngIf="indicadores">
+    <mat-list-item *ngFor="let indicador of indicadores | keyvalue; let last = last">
+      <div class="list-item-content">
+        <p class="fecha"><strong class="custom-button"> {{ formatearFechas(indicador.value.fecha) }} </strong></p>
+        <p class="valor"><strong>  {{
+          codigo === 'uf' ? '$' :
+          (codigo === 'dolar_intercambio' || codigo === 'dolar') ? '$' :
+          (codigo === 'euro' || codigo === 'bitcoin') ? '$' :
+          (codigo === 'ivp' || codigo === 'utm') ? '$' :
+          (codigo === 'tasa_desempleo' || codigo === 'tpm') ? '%' :
+          (codigo === 'imacec' || codigo === 'tpm') ? '$' :
+          (codigo === 'libra_cobre') ? '$' :
+          (codigo === 'ipc' ? '%' : '')
+        }}  {{ indicador.value.valor }} </strong></p>
+      </div>
+      <mat-divider *ngIf="!last"></mat-divider>
+    </mat-list-item>
+  </mat-list>
+  <div *ngIf="!indicadores">
+    <p>Cargando indicadores...</p>
+  </div>
+</div>
+
+
+
+

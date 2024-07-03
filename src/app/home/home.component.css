@@ -1,0 +1,79 @@
+.mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .mat-primary.mat-toolbar-color-primary {
+    background-color: #ccc; 
+    color: #fffffff0; 
+  }
+  .toolbar-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+  }
+  .custom-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px; 
+    padding: 16px; 
+    border-bottom: 1px solid #ddd; 
+  }
+  .menu-icon-button .mat-icon {
+    color: rgb(0, 191, 255);
+  }
+
+  .info-icon {
+    color: rgb(0, 191, 255);
+  }
+
+.custom-list-item div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-list-item p {
+    margin: 0;
+  }
+  
+  .list-item-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    margin-left: auto; 
+  }
+  
+  .list-item-icons button {
+    margin-left: 8px; 
+  }
+  .mat-list-item {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 8px;
+  }
+  
+  .list-item-icons {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .list-item-icons button {
+    margin-left: 8px; 
+  }
+  
+  .arrow-icon {
+    margin-left: auto; 
+    margin-right: 8px; 
+    margin-top: 8px;
+  }
+
+   .blue-text-small {
+    color: rgb(0, 191, 255);
+    font-size: 12px;
+  } 
+  
+
+  

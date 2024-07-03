@@ -1,0 +1,48 @@
+
+.mat-primary.mat-toolbar-color-primary {
+    background-color: #ccc; 
+    color: #fffffff0; 
+  }
+  .toolbar-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+  }
+  .custom-button {
+    color: #0077cc;
+  }
+.spacer {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    padding: 5px; 
+    height: 100px;
+    color: #0077cc;
+}
+ .celest-text {
+    color: #0077cc;
+    text-align: center;
+  }
+
+  .label-container {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-bottom: 16px; 
+  }
+  
+  .label-container label {
+    margin-right: 16px; 
+    width: 300px; 
+  }
+  
+  .label-container input[type="text"] {
+    flex: 1; 
+    padding: 8px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+  }
+  

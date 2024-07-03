@@ -1,0 +1,62 @@
+.mat-primary.mat-toolbar-color-primary {
+    background-color: #ccc; 
+    color: #fffffff0; 
+  }
+.toolbar-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+}
+.spacer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px; 
+  height: 100px;
+  text-align: left;
+  color: #0077cc;
+  }
+  .custom-button {
+    color: #0077cc; 
+  }
+
+  .list-item-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fecha {
+    text-align: left;
+    margin-right: auto;
+    margin-right: 8px; 
+    margin-top: 8px;
+  }
+  
+  .valor {
+    padding-left: 120px;
+    margin-right: 5px;
+    border-left: 0px;
+    padding-right: 5px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 8px; 
+    margin-top: 8px;
+  }
+
+  .label-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px; 
+  }
+  
+  .label-container label {
+    font-size: 16px; 
+    color: #333; 
+    flex: 1;
+  }
+  
+  .label-container input {
+    flex: 2;
+    padding: 8px; 
+    text-align: right; 
+  }

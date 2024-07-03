@@ -1,0 +1,37 @@
+<mat-toolbar class="mat-primary mat-toolbar-color-primary">
+  <button mat-icon-button class="menu-icon-button">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="toolbar-title">Indicadores</span>
+  <div class="spacer"></div>
+</mat-toolbar>
+
+<div style="padding: 20px;">
+  <mat-list *ngIf="indicadores">
+    <mat-list-item *ngFor="let indicador of indicadores | keyvalue; let last = last" class="custom-list-item">
+      <div>
+        <p *ngIf="indicador.value.nombre" (click)="navigateToOtraPagina(indicador.value.codigo)"><strong>{{indicador.value.nombre}}</strong></p>
+        <p *ngIf="indicador.value.unidad_medida" class="blue-text-small">{{indicador.value.unidad_medida}}</p>
+      </div>
+      <div class="list-item-icons">
+        <button mat-icon-button aria-label="Arrow" 
+        (click)="navigateToOtraPaginaDetalle(indicador.value.codigo,
+        indicador.value.nombre,
+        indicador.value.fecha,
+        indicador.value.valor,
+        indicador.value.unidad_medida)">
+          <mat-icon class="info-icon">info</mat-icon>
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+      </div>
+      <mat-divider *ngIf="!last"></mat-divider>
+    </mat-list-item>
+  </mat-list>
+  <div *ngIf="!indicadores">
+    <p>Cargando indicadores...</p>
+  </div>
+</div>
+
+
+
+
