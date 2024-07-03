@@ -34,13 +34,6 @@ export class HomeComponent implements OnInit {
       unity: unity
     } });
   }
-  // loadDataService(){
-  //   this.indicadorService.getIndicadores().subscribe(data => {
-  //     this.indicadores = data;
-  //     console.log(this.indicadores); // Para verificar los datos en la consola
-  //   });
-  // }
-
   loadDatosService(): void {
     this.indicadorService.getIndicadores()
       .subscribe(
