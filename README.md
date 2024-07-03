@@ -1,6 +1,8 @@
 # IndicadoresEconomicos
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
+S.O : MacOS Catalina 
+used backend for Example from  : https://mindicador.cl/ 
 
 ## Development server
 
